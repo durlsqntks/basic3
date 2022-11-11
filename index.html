@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .moveorigin {
+            background-image: url(스타워즈1.jpg);
+            background-size: cover;
+            width: 600px;
+            height: 300px;
+            overflow: hidden;
+        }
+
+        .moveorigin .movement {
+            background-image: url(스타워즈2.jpg);
+            background-size: cover;
+            width: 600px;
+            height: 300px;
+            position: relative;
+            /* 움직이도록 position */
+            top: 300px;
+            transition: 1s;
+            /* 움직이는 딜레이 transition */
+        }
+
+        /*  */
+        .moveorigin:hover .movement {
+            top: 0;
+        }
+
+        .moveorigin2 {
+            background-image: url(레오2-1.jpg);
+            width: 800px;
+            height: 350px;
+            background-size: cover;
+            overflow: hidden;
+        }
+
+        .moveorigin2 .movement2 {
+            background-image: url(레오.jpg);
+            width: 800px;
+            height: 350px;
+            position: relative;
+            bottom: 350px;
+            transition: 1s;
+        }
+
+        .moveorigin2:hover .movement2 {
+            bottom: 0;
+        }
+
+        .moveorigin3 {
+            background-color: orange;
+            width: 350px;
+            height: 350px;
+            background-size: cover;
+            overflow: hidden;
+        }
+
+        .moveorigin3 .movement3 {
+            background-color: orchid;
+            width: 350px;
+            height: 350px;
+            position: relative;
+            right: 350px;
+            transition: 0.3s;
+        }
+
+        .moveorigin3:hover .movement3 {
+            right: 0;
+        }
+
+        .moveorigin4 {
+            background-image: url(톰.gif);
+            width: 800px;
+            height: 400px;
+            background-size: cover;
+            overflow: hidden;
+        }
+
+        .moveorigin4 .movement4 {
+            background-color: azure;
+            width: 800px;
+            height: 400px;
+            position: relative;
+            top: 800px;
+            transition: 0.3s;
+        }
+
+        .moveorigin4:hover .movement4 {
+            top: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="moveorigin">
+        <div class="movement">hello world</div>
+    </div>
+
+    <div class="moveorigin2">
+        <div class="movement2"></div>
+    </div>
+
+    <div class="moveorigin3">
+        <div class="movement3"></div>
+    </div>
+
+    <div class="moveorigin4">
+        <div class="movement4"></div>
+    </div>
+</body>
+
+</html>
